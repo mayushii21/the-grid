@@ -1,0 +1,19 @@
+[project]
+name = "city-network"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "mayushii21", email = "122178787+mayushii21@users.noreply.github.com"},
+]
+dependencies = [
+    "matplotlib>=3.7.3",
+    "seaborn>=0.13.0",
+    "numpy>=1.24.4",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
