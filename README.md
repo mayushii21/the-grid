@@ -1,10 +1,34 @@
 # CityGrid
 
-### View examples [here](/src/city_network/results.ipynb).
+### View examples [here](/src/city_network/results.ipynb) <—
 
-### View source code [here](/src/city_network/citygrid.py).
+### View source code [here](/src/city_network/citygrid.py) <—
 
-<p>&nbsp;</p>
+## Installation (Linux, bash)
+
+Clone the repository:
+
+    git clone https://github.com/mayushii21/the-grid.git
+
+Navigate to the folder:
+
+    cd the-grid
+
+Create a python virtual environment:
+
+    python -m venv gridenv
+
+Activate the virtual environment:
+
+    source gridenv/bin/activate
+
+Install the package from the current folder:
+
+    pip install .
+
+## Usage
+
+Create a new jupyter notebook or navigate to the given examples in `/src/city_network/results.ipynb`. Activate the virtual environment with the installed package.
 
 Import the class with `from city_network.citygrid import CityGrid`.
 Create an instance of the CityGrid class with `instance_var = CityGrid(n, m, obstruction_cov=0.3, seed=None)`
