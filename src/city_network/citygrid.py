@@ -97,21 +97,18 @@ class CityGrid:
         # Repeat until all empty blocks are covered
         while set_list:
             # Store all towers of sets into a list
-            towers = []
-            for s in set_list:
-                for el in s:
-                    towers.append(el)
+            towers = [el for s in set_list for el in s]
+            # towers = []
+            # for s in set_list:
+            #     for el in s:
+            #         towers.append(el)
             # Obtain the most frequent one
             tower = _most_frequent(towers)
             # Place the most frequent tower
             self.place_tower(*tower, tower_range)
 
             # Remove sets containing the placed tower from the list
-            new_set_list = []
-            for s in set_list:
-                if tower not in s:
-                    new_set_list.append(s)
-            set_list = new_set_list
+            set_list = [s for s in set_list if tower not in s]
 
     def _plot_path(self, path):
         # Create a list of x, y values for a given path
