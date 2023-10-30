@@ -28,7 +28,7 @@ Install the package from the current folder:
 
 ## Usage
 
-Create a new jupyter notebook or navigate to the given examples in `/src/city_network/results.ipynb`. Activate the virtual environment with the installed package.
+Create a new jupyter notebook or navigate to the example file at `/src/city_network/results.ipynb`. Activate the virtual environment with the installed package.
 
 Import the class with `from city_network.citygrid import CityGrid`.
 Create an instance of the CityGrid class with `instance_var = CityGrid(n, m, obstruction_cov=0.3, seed=None)`
